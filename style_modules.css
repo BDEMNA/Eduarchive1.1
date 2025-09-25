@@ -82,3 +82,42 @@ footer {
     background-color: #cc0000;
     color: white;
 }
+
+/* 📱 Responsivité */
+@media (max-width: 1024px) {
+    .book {
+        width: 160px;
+    }
+    .book h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .library {
+        gap: 15px;
+    }
+    .book {
+        width: 45%; /* 2 colonnes sur tablette */
+    }
+    .book img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .book {
+        width: 90%; /* 1 colonne sur mobile */
+    }
+    .book img {
+        height: 120px;
+    }
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+}
